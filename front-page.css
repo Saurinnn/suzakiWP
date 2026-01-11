@@ -1,0 +1,23 @@
+#content{
+  margin-top:0 !important;
+  width: 100% !important;
+}
+
+.wrap{
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+#content-in{
+  margin:0 0;
+}
+
+.main{
+  padding:0 0 !important;
+  border:none !important;
+}
+
+.footer{
+  margin-top: 0 !important;
+}

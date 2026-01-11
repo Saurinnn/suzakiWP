@@ -1,0 +1,202 @@
+<?php get_header(); ?>
+<div class="qa-content">
+  <div class="qa-title">
+    <div class="qa-title-back"></div>
+    <div class="qa-text01">Q&A</div>
+    <div class="qa-text02">スザキラボのよくある質問</div>
+  </div>
+
+  <!--タイトルエリア-->  
+  <div class="my-title-area">
+    <div class="my-title-area-back"></div>
+    <div class="my-title-text qa-mytitle-text">
+      <h2 class="my-title qa-my-title">B型事業所とは</h2>
+      <p class="my-subtitle qa-my-subtitle">What?</p>
+    </div>
+  </div>
+
+  <!--B型事業所とは-->
+  <div class="typeB-content">
+    <div class="typeB-exp01">
+      <div class="typeB-exp01-img">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/oji_01.png" alt="">
+      </div>
+      <div class="typeB-exp01-text">
+        <p>
+          就労継続支援B型事業所とは、障がいや難病などの事情で一般企業への就職が困難な方、生きづらさ働きづらさを感じていらっしゃる方の就労を支援するための事業所です。雇用保険の適用となる「週に20時間」の勤務とは違い、通院などスケジュール調整や体調へのケアといった、障がいや難病への理解と配慮が行き届いた中で、継続的な就労に必要なスキルと体力を身に着けることができます。
+        </p>
+        <h3>
+          障がいや病気に理解のある事業所スタッフがサポートしてくれるので、
+          安定的な就労が期待できます。 
+        </h3>
+      </div>
+    </div>
+
+    <div class="typeB-exp02">
+      <div class="typeB-exp02-title">
+        <h3>こんな方を募集しています</h3>
+      </div>
+
+      <div class="target-text line01">
+        <div class="target-title">
+          <div class="target-title-back"></div>
+          <div class="target-title-text">対象者</div>
+        </div>
+        <div class="target-exp exp01">
+          <ul>
+            <li>・障がいや年齢、体力の面で一般就労が困難となった人</li>
+            <li>・一般就労や就労継続支援A型での就労が難しかった人</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="available line01">
+        <div class="target-title">
+          <div class="target-title-back available-back"></div>
+          <div class="target-title-text">利用時間</div>
+        </div>
+        <div class="available-exp exp01">
+          <ul>
+            <li>週1日(2時間程度)のご利用から。面談等でご相談ください。</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="typeB-exp02-text">
+        ※「障がい者手帳」が無い場合もB型事業所を利用できることがあります。医師の診断や定期的な通院があり、上記の条件を満たしていれば、自治体の判断によって入所が可能な場合がありますので、こちらも市区町村の窓口に問い合わせてみてください。
+      </p>
+    </div>
+  </div>
+
+  <!--お悩み-->
+  <!--タイトルエリア-->  
+  <div class="my-title-area">
+    <div class="my-title-area-back"></div>
+    <div class="my-title-text qa-mytitle-text">
+      <h2 class="my-title qa-my-title">こんなお悩みないですか？</h2>
+      <p class="my-subtitle qa-my-subtitle">Problems</p>
+    </div>
+  </div>
+
+  <!--お悩みコンテンツ-->
+  <div class="suzaki-textbox problem-box">
+    <div class="slide-left-text problem-title">
+      <h3>エンターテイメント業界への関心はあるけれど、未経験で自信がない。初心者でも大丈夫か不安・・・</h3>
+    </div>
+    <div class="suzaki-flex-R fireworks-flex">
+      <div class="suzaki-img slide-left-img fireworks">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hanabi_red.png" alt="未経験">
+      </div>
+      <div class="suzaki-text01 slide-right-text">
+        <p>
+          大丈夫です！誰でも最初は未経験の初心者です。スザキラボは就労継続支援B型事業所なので、「週に４０時間は働かなければならない」一般の雇用とは違い、自分のペースで訓練しながら業務を身に着けていくことが可能です。現役のゲームクリエイターが丁寧にサポートするので、どうぞご安心ください。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="suzaki-textbox problem-box problem-box02">
+    <div class="slide-left-text problem-title">
+      <h3>就職した経験がない、または就職したことはあっても長続きしたことがありません。将来に焦りと不安ばかり感じています・・・</h3>
+    </div>
+    <div class="suzaki-flex-L fireworks-flex">
+      <div class="suzaki-text01 slide-left-text">
+        <p>
+          安心してください！就労継続支援B型スザキラボには、業務の内容をサポートする「職業指導員」のほか、ご利用者さまの気持ちや不安に寄り添う「生活支援員」がいます。ちいさな不安からお気軽にご相談ください。
+        </p>
+      </div>
+      <div class="suzaki-img slide-rigit-img fireworks">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hanabi_blue.png" alt="就労継続">
+      </div>
+    </div>
+  </div>
+
+  <div class="suzaki-textbox problem-box problem-box03">
+    <div class="slide-left-text problem-title">
+      <h3>現在も定期的に通院しているほか、体調によって不定期に受診の必要があります。こんな状況でも利用可能でしょうか？</h3>
+    </div>
+    <div class="suzaki-flex-R fireworks-flex">
+      <div class="suzaki-img slide-left-img fireworks">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hanabi_green.png" alt="通院">
+      </div>
+      <div class="suzaki-text01 slide-right-text">
+        <p>
+          もちろんご利用可能です！「就労継続支援B型」でのお仕事は、固定給ではなく、ご利用時間や回数に応じた工賃制。通院等ご自身のスケジュールや状況に合わせ、自分のペースで働くことが可能です。ご希望等もお気軽にご相談ください。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--質問-->
+  <!--タイトルエリア-->  
+  <div class="my-title-area">
+    <div class="my-title-area-back"></div>
+    <div class="my-title-text qa-mytitle-text">
+      <h2 class="my-title qa-my-title">よくある質問</h2>
+      <p class="my-subtitle qa-my-subtitle">FAQ</p>
+    </div>
+  </div>
+
+  <div class="suzaki-textbox problem-box">
+    <div class="slide-left-text problem-title">
+      <h3>障がいの種類によって、受け入れ可能なのはどの程度ですか？</h3>
+    </div>
+    <div class="suzaki-flex-R fireworks-flex">
+      <div class="suzaki-img slide-left-img fireworks">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kirakira_01_yellow.png" alt="障害">
+      </div>
+      <div class="suzaki-text01 slide-right-text">
+        <p>さまざまな障がいに対応しています。面接で個別のニーズをお伺いし、適切な支援を提供します。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="suzaki-textbox problem-box problem-box02">
+    <div class="slide-left-text problem-title">
+      <h3>ゲーム開発以外の業務も担当することはありますか？</h3>
+    </div>
+    <div class="suzaki-flex-L fireworks-flex">
+      <div class="suzaki-text01 slide-left-text">
+        <p>
+          はい、プロジェクトによりますが、スザキラボではパソコン修理・2D/3Dモデル制作・CGIやPeal言語のプログラム制作・動画編集など、様々な分野でスキルを発揮できるチャンスがあります。またパソコンが苦手な方でもアメリカンフラワーの制作などの業務に携わっていただけます。
+        </p>
+      </div>
+      <div class="suzaki-img slide-rigit-img fireworks">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kirakira_01_red.png" alt="業務内容">
+      </div>
+    </div>
+  </div>
+
+  <div class="suzaki-textbox problem-box">
+    <div class="slide-left-text problem-title">
+      <h3>キャリアの成長やスキル向上のためのプログラムはありますか？</h3>
+    </div>
+    <div class="suzaki-flex-R fireworks-flex">
+      <div class="suzaki-img slide-left-img fireworks">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kirakira_01_green.png" alt="未経験">
+      </div>
+      <div class="suzaki-text01 slide-right-text">
+        <p>
+          はい、個々の成長に合わせたトレーニングプログラムがあります。定期的なフィードバックとキャリアアップのサポートを提供します。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="suzaki-textbox problem-box problem-box03">
+    <div class="slide-left-text problem-title">
+      <h3>お昼のお弁当の提供はありますか？</h3>
+    </div>
+    <div class="suzaki-flex-L fireworks-flex">
+      <div class="suzaki-text01 slide-left-text">
+        <p>
+          はい、クックフリーズ方式のお弁当を無償で提供しております。ヤンニョムチキン・デミハンバーグ・豚しゃぶ・プルコギ・黒酢照り焼き・チャンプル・タラのレモンペッパなど様々なメニューを用意しています
+        </p>
+      </div>
+      <div class="suzaki-img slide-rigit-img fireworks">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kirakira_01_blue.png" alt="就労継続">
+      </div>
+    </div>
+  </div>
+</div>
+<?php get_footer(); ?>
