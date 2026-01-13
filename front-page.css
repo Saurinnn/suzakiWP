@@ -29,18 +29,31 @@
   margin: 0 auto;
   background-color: rgb(255, 255, 255,0.8);
   padding: 50px 20px;
-  }
+}
 
 .blog-ul{
   width: 100%;
+  padding: 0;
 }
 
 .blog-li{
   display: flex;
-  //justify-content: center;
   width: 100%;
   margin-bottom: 10px;
+  border-bottom: 1px dotted #333;
+  padding-bottom: 10px;
 }
+
+.blog-ul,.blog-li{
+  list-style-type: none;
+}
+
+.li-pic img{
+  max-width: 270px;
+  height: auto;
+  display: block;
+}
+
 .li-text{
   padding-left: 20px;
   width: 70%;
@@ -57,15 +70,6 @@
   margin-bottom: 10px;
 }
 
-.blog-ul,.blog-li{
-  list-style-type: none;
-}
-
-.blog-li{
-  border-bottom: 1px dotted #333;
-  padding-bottom: 10px;
-}
-
 .news-section button{
   display: block;
   margin: 20px auto 0 auto;
@@ -80,4 +84,59 @@
 
 .news-section button:hover{
   background-color: #D04FF7;
+}
+
+/* =========================
+   タブレット（900px以下）
+========================= */
+@media screen and (max-width: 900px) {
+  .news-section{
+    width: 90%;
+    padding: 40px 15px;
+  }
+
+  .li-text{
+    width: 65%;
+    font-size: 13px;
+  }
+
+  .li-text h3{
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   スマホ（540px以下）
+========================= */
+@media screen and (max-width: 540px) {
+  .news-section{
+    width: 90%;
+    padding: 30px 10px;
+  }
+
+  .blog-li{
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .li-pic img{
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .li-text{
+    width: 100%;
+    padding-left: 0;
+    font-size: 13px;
+  }
+
+  .li-text h3{
+    font-size: 18px;
+  }
+
+  .news-section button{
+    width: 60%;
+    font-size: 14px;
+  }
 }
