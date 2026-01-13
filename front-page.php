@@ -51,9 +51,63 @@
         </ul>
       </div>
     </div>
-
+  <!-- お知らせ -->
     <div class="news-section">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/news.jpg" alt="">
+    <ul class="blog-ul">
+    <?php
+    $args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 6,
+      'category_name' => 'お知らせ', // ★ ここを追加！
+    );
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()):
+      while ($the_query->have_posts()):
+        $the_query->the_post();
+        ?>
+
+<a href="<?php the_permalink(); ?>">
+        <li class="blog-li">
+        <div class="li-pic">
+        <?php
+if (has_post_thumbnail()) {
+    echo get_the_post_thumbnail(get_the_ID(), array(270, 180));
+} else {
+    echo '<img src="' . get_stylesheet_directory_uri() . '/images/noimg.jpg" alt="No Image" width="270" height="180">';
+}
+?>
+            </div>
+            <div class="li-text">
+            <p><?php the_time('Y/n/j'); ?></p>
+            <h3>
+              <?php
+              if (mb_strlen($post->post_title) > 20) {
+                $title = mb_substr($post->post_title, 0, 50);
+                echo $title . '...';
+              } else {
+                echo $post->post_title;
+              }
+              ?>
+            </h3>
+            <p class="excerpt">
+  <?php
+    $content = strip_tags(get_the_content()); // HTMLタグを削除
+    $content = mb_substr($content, 0, 80);    // 200文字を抜き出す
+    echo $content . '...';
+  ?>
+</p>
+            </div>
+        </li>
+        </a>
+
+        <?php
+      endwhile;
+    else:
+      ?>
+      <li>お探しの記事はありませんでした</li>
+    <?php endif; ?>
+</ul>
+      <a href="/blog"><button>VIEW MORE>>></button></a>
     </div>
   </div>
 
