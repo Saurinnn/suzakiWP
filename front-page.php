@@ -23,7 +23,7 @@
   </div>
 
   <!-- Newsセクション -->
-  <div class="my-news">
+  <div id="my-news" class="my-news">
     <div class="background01"></div>
     <div class="my-title-area">
       <div class="my-title-area-back"></div>
@@ -112,7 +112,7 @@ if (has_post_thumbnail()) {
   </div>
 
   <!-- About us -->
-  <div class="about-container">
+  <div id="about" class="about-container">
     <div class="my-title-area">
       <div class="my-title-area-back"></div>
       <div class="my-title-text">
@@ -289,7 +289,7 @@ if (has_post_thumbnail()) {
   </div>
 
   <!-- 会社概要 -->
-  <div class="office-contents">
+  <div id="office" class="office-contents">
     <div class="my-title-area">
       <div class="my-title-area-back"></div>
       <div class="my-title-text">
