@@ -15,10 +15,12 @@
       <div class="my-cover-text03">
         <p>就労継続支援B型スザキラボはエンターテイメント系の就労支援事業所です。現役ゲームクリエイターが直接ていねいにサポートいたします。あなたも、制作側でお仕事してみませんか？</p>
       </div>
+      <a href="/suzaki/wp/contact">
       <div class="my-cover-info">
         <h3>お問い合わせはこちら</h3>
         <p>TEL 092-402-1650 平日 10:00-17:00</p>
       </div>
+      </a>
     </div>
   </div>
 
@@ -107,7 +109,7 @@ if (has_post_thumbnail()) {
       <li>お探しの記事はありませんでした</li>
     <?php endif; ?>
 </ul>
-      <a href="/blog"><button>VIEW MORE>>></button></a>
+      <a href="/suzaki/wp/blog"><button>VIEW MORE>>></button></a>
     </div>
   </div>
 
@@ -342,9 +344,11 @@ if (has_post_thumbnail()) {
     <div class="inquire-text">
       <p>障害を持つ方の就労に際して重要なのは、その人の特性に合わせた提案を行うことです。<br>まずはお気軽にお問い合わせください。</p>
     </div>
+    <a href="/suzaki/wp/contact">
     <div class="inquire-button">
       <p>まずは問いあわせてみる</p>
     </div>
+    </a>
     <div class="inquire-tel">
       <p>お電話でのお問い合わせ<br>092-402-1650<br>(平日10:00～17:00)</p>
     </div>
