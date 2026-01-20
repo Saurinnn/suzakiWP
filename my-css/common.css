@@ -6,3 +6,8 @@
   position: relative;
   right: 50px;
 }
+
+/*お問い合わせフォーム*/
+textarea {
+border: 1px solid #ccc;
+}

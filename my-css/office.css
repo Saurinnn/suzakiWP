@@ -57,10 +57,11 @@
 .improve {
   margin: 30px auto;
   width: 40%;
+  text-align: center;
   background-color: #9CD7F6;
   color: #fff;
   font-size: 24px;
-  padding: 20px 50px;
+  padding: 20px 0;
   border-radius: 10px;
   border: 1px solid #2883CD;
 }
