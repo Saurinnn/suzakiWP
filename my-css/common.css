@@ -1,11 +1,8 @@
 @charset "UTF-8";
 
 /*common*/
-#go-to-top {
-  right: 20px;
-} 
 
 .copyright {
   position: relative;
-  right: 40px;
+  right: 50px;
 }
