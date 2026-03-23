@@ -1,43 +1,43 @@
 /*一般設定*/
-#content{
-  margin-top:0 !important;
+#content {
+  margin-top: 0 !important;
   width: 100% !important;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.wrap{
+.wrap {
   width: 100% !important;
   margin: 0 auto !important;
   padding: 0 !important;
 }
 
-#content-in{
-  margin:0 0;
+#content-in {
+  margin: 0 0;
 }
 
-.main{
-  padding:0 0 !important;
-  border:none !important;
+.main {
+  padding: 0 0 !important;
+  border: none !important;
 }
 
-.footer{
+.footer {
   margin-top: 0 !important;
 }
 
 /*お知らせ*/
-.news-section{
+.news-section {
   width: 60%;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255,0.8);
+  background-color: rgb(255, 255, 255, 0.8);
   padding: 50px 20px;
 }
 
-.blog-ul{
+.blog-ul {
   width: 100%;
   padding: 0;
 }
 
-.blog-li{
+.blog-li {
   display: flex;
   width: 100%;
   margin-bottom: 10px;
@@ -45,33 +45,34 @@
   padding-bottom: 10px;
 }
 
-.blog-ul,.blog-li{
+.blog-ul,
+.blog-li {
   list-style-type: none;
 }
 
-.li-pic img{
+.li-pic img {
   max-width: 270px;
   height: auto;
   display: block;
 }
 
-.li-text{
+.li-text {
   padding-left: 20px;
   width: 70%;
   font-size: 14px;
 }
 
-.li-text:hover{
+.li-text:hover {
   color: #D04FF7;
 }
 
-.li-text h3{
+.li-text h3 {
   color: #4682b4;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.news-section button{
+.news-section button {
   display: block;
   margin: 20px auto 0 auto;
   padding: 10px 20px;
@@ -83,7 +84,7 @@
   cursor: pointer;
 }
 
-.news-section button:hover{
+.news-section button:hover {
   background-color: #D04FF7;
 }
 
@@ -91,17 +92,17 @@
    タブレット（900px以下）
 ========================= */
 @media screen and (max-width: 900px) {
-  .news-section{
+  .news-section {
     width: 90%;
     padding: 40px 15px;
   }
 
-  .li-text{
+  .li-text {
     width: 65%;
     font-size: 13px;
   }
 
-  .li-text h3{
+  .li-text h3 {
     font-size: 20px;
   }
 }
@@ -110,33 +111,33 @@
    スマホ（540px以下）
 ========================= */
 @media screen and (max-width: 540px) {
-  .news-section{
+  .news-section {
     width: 90%;
     padding: 30px 10px;
   }
 
-  .blog-li{
+  .blog-li {
     flex-direction: column;
     padding: 0 10px;
   }
 
-  .li-pic img{
+  .li-pic img {
     max-width: 100%;
     width: 100%;
     margin-bottom: 10px;
   }
 
-  .li-text{
+  .li-text {
     width: 100%;
     padding-left: 0;
     font-size: 13px;
   }
 
-  .li-text h3{
+  .li-text h3 {
     font-size: 18px;
   }
 
-  .news-section button{
+  .news-section button {
     width: 60%;
     font-size: 14px;
   }

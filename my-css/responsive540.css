@@ -65,6 +65,13 @@
   .my-cover-info p {
     text-shadow: 2px 6px 3px rgb(0, 0, 0, 0.5);
   }
+
+  /*スマホサイトメニュー*/
+.menu-item{
+  width: 60%;
+  border-bottom: 1px dotted #333;
+  margin: 20px 0;
+}
     
   /*見出し*/
   .my-title-area {

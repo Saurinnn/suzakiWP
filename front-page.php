@@ -246,7 +246,7 @@ if (has_post_thumbnail()) {
         </div>
         <div class="suzaki-flex-L">
           <div class="suzaki-text01 slide-left-text">
-            <p>スザキラボでは、Studioを使ったWebサイト制作や、HTML・CSSを用いたサイト構築業務を行っています。企業や事業所のコーポレートサイト、サービス紹介ページなどを制作し、デザインから公開までの一連の流れを実践的に学ぶことができます。実際の業務では、ページレイアウトの作成、テキストや画像の配置、レスポンシブ対応などを行い、Web制作の基礎から応用までを段階的に習得していきます。</p>
+            <p>スザキラボでは、StudioやWordPressを使ったWebサイト制作や、HTML・CSSを用いたサイト構築業務を行っています。企業や事業所のコーポレートサイト、サービス紹介ページなどを制作し、デザインから公開までの一連の流れを実践的に学ぶことができます。実際の業務では、ページレイアウトの作成、テキストや画像の配置、レスポンシブ対応などを行い、Web制作の基礎から応用までを段階的に習得していきます。</p>
           </div>
           <div class="suzaki-img slide-rigit-img">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/work04.jpg" alt="Webサイト制作">
