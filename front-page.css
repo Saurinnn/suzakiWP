@@ -62,14 +62,15 @@
   font-size: 14px;
 }
 
-.li-text:hover {
-  color: #D04FF7;
+.blog-ul a:hover {
+  color: #D04FF7 !important;
 }
 
 .li-text h3 {
   color: #4682b4;
   font-size: 24px;
   margin-bottom: 10px;
+  line-height: 1;
 }
 
 .news-section button {

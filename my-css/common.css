@@ -9,6 +9,9 @@
 
 /*お問い合わせフォーム*/
 textarea {
-border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
+.inquire {
+  padding: 0 0 !important;
+}

@@ -2,7 +2,8 @@
 <div class="my-content">
   <!-- カバーセクション -->
   <div class="my-cover">
-    <video class="top-video" src="<?php echo get_stylesheet_directory_uri(); ?>/images/52315_1280x720.mp4" autoplay loop muted playsinline></video>
+    <video class="top-video" src="<?php echo get_stylesheet_directory_uri(); ?>/images/52315_1280x720.mp4" autoplay loop
+      muted playsinline></video>
     <div class="my-cover-area">
       <div class="my-cover-text01">
         <div class="text01-back"></div>
@@ -16,10 +17,13 @@
         <p>就労継続支援B型スザキラボはエンターテイメント系の就労支援事業所です。現役ゲームクリエイターが直接ていねいにサポートいたします。あなたも、制作側でお仕事してみませんか？</p>
       </div>
       <a href="/suzaki/wp/contact">
-      <div class="my-cover-info">
-        <h3>お問い合わせはこちら</h3>
-        <p>TEL 092-402-1650 平日 10:00-17:00</p>
-      </div>
+        <div class="my-cover-info">
+          <h3>お問い合わせはこちら</h3>
+          <div class="cover-info-detail">
+            <div class="cover-info-detail-L">TEL 092-402-1650</div>
+            <div class="cover-info-detail-R">平日 10:00-17:00</div>
+          </div>
+        </div>
       </a>
     </div>
   </div>
@@ -45,70 +49,72 @@
       <div class="announce-list">
         <ul>
           <li>
-            <span class="announce-text">2025/12/17(水)11:00～15:00 >>> 福岡市東区役所にてアメリカンフラワーの展示即売会があります。クリスマスの贈り物にぴったりです。ぜひ皆様でお越しください！</span>
+            <span class="announce-text">2025/12/17(水)11:00～15:00 >>>
+              福岡市東区役所にてアメリカンフラワーの展示即売会があります。クリスマスの贈り物にぴったりです。ぜひ皆様でお越しください！</span>
           </li>
           <li>
-            <span class="announce-text">2025/12/5(金)～25日(木)10:00~20:00 >>> 福岡市東区役所にてアメリカンフラワーの展示即売会があります。クリスマスの贈り物にぴったりです。ぜひ皆様でお越しください！</span>
+            <span class="announce-text">2025/12/5(金)～25日(木)10:00~20:00 >>>
+              福岡市東区役所にてアメリカンフラワーの展示即売会があります。クリスマスの贈り物にぴったりです。ぜひ皆様でお越しください！</span>
           </li>
         </ul>
       </div>
     </div>
-  <!-- お知らせ -->
+    <!-- お知らせ -->
     <div class="news-section">
-    <ul class="blog-ul">
-    <?php
-    $args = array(
-      'post_type' => 'post',
-      'posts_per_page' => 6,
-      'category_name' => 'お知らせ', // ★ ここを追加！
-    );
-    $the_query = new WP_Query($args);
-    if ($the_query->have_posts()):
-      while ($the_query->have_posts()):
-        $the_query->the_post();
-        ?>
-
-<a href="<?php the_permalink(); ?>">
-        <li class="blog-li">
-        <div class="li-pic">
+      <ul class="blog-ul">
         <?php
-if (has_post_thumbnail()) {
-    echo get_the_post_thumbnail(get_the_ID(), array(270, 180));
-} else {
-    echo '<img src="' . get_stylesheet_directory_uri() . '/images/noimg.jpg" alt="No Image" width="270" height="180">';
-}
-?>
-            </div>
-            <div class="li-text">
-            <p><?php the_time('Y/n/j'); ?></p>
-            <h3>
-              <?php
-              if (mb_strlen($post->post_title) > 20) {
-                $title = mb_substr($post->post_title, 0, 50);
-                echo $title . '...';
-              } else {
-                echo $post->post_title;
-              }
-              ?>
-            </h3>
-            <p class="excerpt">
-  <?php
-    $content = strip_tags(get_the_content()); // HTMLタグを削除
-    $content = mb_substr($content, 0, 80);    // 200文字を抜き出す
-    echo $content . '...';
-  ?>
-</p>
-            </div>
-        </li>
-        </a>
+        $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 6,
+          'category_name' => 'お知らせ', // ★ ここを追加！
+        );
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()):
+          while ($the_query->have_posts()):
+            $the_query->the_post();
+            ?>
 
-        <?php
-      endwhile;
-    else:
-      ?>
-      <li>お探しの記事はありませんでした</li>
-    <?php endif; ?>
-</ul>
+            <a href="<?php the_permalink(); ?>">
+              <li class="blog-li">
+                <div class="li-pic">
+                  <?php if (has_post_thumbnail()) {
+                    echo get_the_post_thumbnail(get_the_ID(), array(270, 180));
+                  } else {
+                    echo '<img src="' . get_stylesheet_directory_uri() . '/images/noimg.jpg" alt="No Image" width="270" height="180">';
+                  }
+                  ?>
+                </div>
+                <div class="li-text">
+                  <p><?php the_time('Y/n/j'); ?></p>
+                  <h3>
+                    <?php
+                    if (mb_strlen($post->post_title) > 20) {
+                      $title = mb_substr($post->post_title, 0, 50);
+                      echo $title . '...';
+                    } else {
+                      echo $post->post_title;
+                    }
+                    ?>
+                  </h3>
+                  <p class="excerpt">
+                    <?php
+                    $content = strip_tags(get_the_content()); // HTMLタグを削除
+                    $content = mb_substr($content, 0, 80); // 200文字を抜き出す
+                    echo $content . '...';
+                    ?>
+                  </p>
+                </div>
+              </li>
+            </a>
+
+            <?php
+          endwhile;
+        else:
+          ?>
+          <li>お探しの記事はありませんでした</li>
+          <?php
+        endif; ?>
+      </ul>
       <a href="/suzaki/wp/blog"><button>VIEW MORE>>></button></a>
     </div>
   </div>
@@ -117,8 +123,8 @@ if (has_post_thumbnail()) {
   <div id="about" class="about-container">
     <div class="my-title-area">
       <div class="my-title-area-back"></div>
-      <div class="my-title-text">
-        <h2 class="my-title">About Us</h2>
+      <div class="my-title-text title-text-about">
+        <h2 class="my-title my-title-about">About Us</h2>
         <p class="my-subtitle">スザキラボの特徴</p>
       </div>
     </div>
@@ -130,7 +136,9 @@ if (has_post_thumbnail()) {
           <div class="about-textbox">
             <div class="text-num">01</div>
             <div class="text-article">
-              <p>エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。</p>
+              <p>
+                エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。
+              </p>
             </div>
           </div>
         </div>
@@ -155,14 +163,18 @@ if (has_post_thumbnail()) {
       </div>
     </div>
   </div>
-<!-- Aboutパララックス -->
-<div class="about02-container">
+  <!-- Aboutパララックス -->
+  <div class="about02-container">
     <div class="background02"></div>
     <div class="about02-wrapper">
       <div class="about02-textbox">
         <h2>スザキラボで<br>クリエイティブな世界に飛び込もう！</h2>
-        <p>福岡市・対馬小路近くにある就労継続支援B型事業所 スザキラボ は、現役のゲームクリエイターが運営する、ちょっとユニークで温かい“クリエイティブ工房”です。と聞くと難しいプログラミングを想像するかもしれませんが、実際には画像加工やチェック、システムテスト、動画編集など、初心者でも専門スタッフのサポートを受けながら着実に取り組める仕事がたくさんあります。ゆっくり力をつけていくことで、スキルだけでなく自信や社会での体力も養っていけます。</p>
-        <p>スザキラボは「みんな違うからこそチームとして強くなれる」という理念のもと、障がいや難病のある方も誇りを持って活躍できる環境づくりを大切にしています。また、バーチャルリアリティや音声認識などの先端技術を活用し、一人ひとりのニーズに寄り添ったアクセスビリティも充実。パソコン修理から2D・3Dモデリング、ゲームデバッグ、BGM制作まで、多彩なIT関連業務に挑戦しながら“好き”を仕事に変える一歩を踏み出せます。</p>
+        <p>福岡市・対馬小路近くにある就労継続支援B型事業所 スザキラボ
+          は、現役のゲームクリエイターが運営する、ちょっとユニークで温かい“クリエイティブ工房”です。と聞くと難しいプログラミングを想像するかもしれませんが、実際には画像加工やチェック、システムテスト、動画編集など、初心者でも専門スタッフのサポートを受けながら着実に取り組める仕事がたくさんあります。ゆっくり力をつけていくことで、スキルだけでなく自信や社会での体力も養っていけます。
+        </p>
+        <p>
+          スザキラボは「みんな違うからこそチームとして強くなれる」という理念のもと、障がいや難病のある方も誇りを持って活躍できる環境づくりを大切にしています。また、バーチャルリアリティや音声認識などの先端技術を活用し、一人ひとりのニーズに寄り添ったアクセスビリティも充実。パソコン修理から2D・3Dモデリング、ゲームデバッグ、BGM制作まで、多彩なIT関連業務に挑戦しながら“好き”を仕事に変える一歩を踏み出せます。
+        </p>
         <p>あなたもスザキラボで、クリエイティブな未来へ飛び込みませんか。</p>
       </div>
     </div>
@@ -172,21 +184,23 @@ if (has_post_thumbnail()) {
   <div class="suzaki-contents">
     <div class="my-title-area">
       <div class="my-title-area-back"></div>
-      <div class="my-title-text">
-        <h2 class="my-title">Contents</h2>
+      <div class="my-title-text title-text-contents">
+        <h2 class="my-title my-title-contents">Contents</h2>
         <p class="my-subtitle">スザキラボの業務</p>
       </div>
     </div>
 
     <div class="suzaki-wrapper">
-       <!-- 3D,2Dモデリング作業 -->
-       <div class="suzaki-textbox">
+      <!-- 3D,2Dモデリング作業 -->
+      <div class="suzaki-textbox">
         <div class="slide-left-text">
           <h3>3D,2Dモデリング作業</h3>
         </div>
         <div class="suzaki-flex-L">
           <div class="suzaki-text01 slide-left-text">
-            <p>エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。</p>
+            <p>
+              エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。
+            </p>
           </div>
           <div class="suzaki-img slide-rigit-img">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/work01.jpg" alt="3D,2Dモデリング作業">
@@ -204,7 +218,9 @@ if (has_post_thumbnail()) {
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/work02.jpg" alt="ゲームデバッガー作業">
           </div>
           <div class="suzaki-text01 slide-right-text">
-            <p>エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。</p>
+            <p>
+              エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。
+            </p>
           </div>
         </div>
       </div>
@@ -216,7 +232,9 @@ if (has_post_thumbnail()) {
         </div>
         <div class="suzaki-flex-L">
           <div class="suzaki-text01 slide-left-text">
-            <p>スザキラボでは、Windows11を導入された企業から、これまで使用していたPCの回収依頼を受けています。回収したPCは内部のほこり取りや除菌清掃を行い、メモリースロットに空きがある場合はメモリー増設も対応します。その後、Windowsのクリーンインストールと最新OSへのアップデートを実施し、メルカリで販売します。これらの作業を一緒に行っていただける利用者の方を募集しています。専門スタッフが丁寧にサポートしますので、安心してご参加いただけます。</p>
+            <p>
+              スザキラボでは、Windows11を導入された企業から、これまで使用していたPCの回収依頼を受けています。回収したPCは内部のほこり取りや除菌清掃を行い、メモリースロットに空きがある場合はメモリー増設も対応します。その後、Windowsのクリーンインストールと最新OSへのアップデートを実施し、メルカリで販売します。これらの作業を一緒に行っていただける利用者の方を募集しています。専門スタッフが丁寧にサポートしますので、安心してご参加いただけます。
+            </p>
           </div>
           <div class="suzaki-img slide-rigit-img">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/work05.jpg" alt="パソコン修理・キッティング作業">
@@ -234,7 +252,9 @@ if (has_post_thumbnail()) {
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/work03.jpg" alt="BGM及び効果音制作">
           </div>
           <div class="suzaki-text01 slide-right-text">
-            <p>エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。</p>
+            <p>
+              エンターテイメント系の業務といっても、難しいプログラミングやコーディングだけが仕事ではありません。画像の加工やチェック、システムテストなど、初めての方でも専門家のサポートがあればできることはたくさんあります。少しづつ力をつけていく時間を大切にすることで、業務スキルだけでなく、社会に出ていく自信と体力をつけていきましょう。
+            </p>
           </div>
         </div>
       </div>
@@ -246,7 +266,9 @@ if (has_post_thumbnail()) {
         </div>
         <div class="suzaki-flex-L">
           <div class="suzaki-text01 slide-left-text">
-            <p>スザキラボでは、StudioやWordPressを使ったWebサイト制作や、HTML・CSSを用いたサイト構築業務を行っています。企業や事業所のコーポレートサイト、サービス紹介ページなどを制作し、デザインから公開までの一連の流れを実践的に学ぶことができます。実際の業務では、ページレイアウトの作成、テキストや画像の配置、レスポンシブ対応などを行い、Web制作の基礎から応用までを段階的に習得していきます。</p>
+            <p>
+              スザキラボでは、StudioやWordPressを使ったWebサイト制作や、HTML・CSSを用いたサイト構築業務を行っています。企業や事業所のコーポレートサイト、サービス紹介ページなどを制作し、デザインから公開までの一連の流れを実践的に学ぶことができます。実際の業務では、ページレイアウトの作成、テキストや画像の配置、レスポンシブ対応などを行い、Web制作の基礎から応用までを段階的に習得していきます。
+            </p>
           </div>
           <div class="suzaki-img slide-rigit-img">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/work04.jpg" alt="Webサイト制作">
@@ -265,8 +287,8 @@ if (has_post_thumbnail()) {
           </div>
           <div class="suzaki-text01 slide-right-text">
             <p>スザキラボでは、ワイヤーを使って一つひとつ丁寧にお花を形作る「アメリカンフラワー制作」に取り組んでいます。
-色や形を工夫しながら作品を完成させていく中で、ものづくりの楽しさや集中する心地よさを感じることができます。完成した作品を見たお客様から「きれいね」「素敵ですね」と声をかけていただけることが、大きなやりがいにつながります。
-初めての方でも安心して取り組めるよう、スタッフが基礎から丁寧にサポートしますので、ものづくりが好きな方や新しいことに挑戦してみたい方にもおすすめの作業です。</p>
+              色や形を工夫しながら作品を完成させていく中で、ものづくりの楽しさや集中する心地よさを感じることができます。完成した作品を見たお客様から「きれいね」「素敵ですね」と声をかけていただけることが、大きなやりがいにつながります。
+              初めての方でも安心して取り組めるよう、スタッフが基礎から丁寧にサポートしますので、ものづくりが好きな方や新しいことに挑戦してみたい方にもおすすめの作業です。</p>
           </div>
         </div>
       </div>
@@ -296,8 +318,8 @@ if (has_post_thumbnail()) {
   <div id="office" class="office-contents">
     <div class="my-title-area">
       <div class="my-title-area-back"></div>
-      <div class="my-title-text">
-        <h2 class="my-title">Office Info</h2>
+      <div class="my-title-text my-title-text-office">
+        <h2 class="my-title my-title-office">Office Info</h2>
         <p class="my-subtitle">事業所概要</p>
       </div>
     </div>
@@ -332,30 +354,33 @@ if (has_post_thumbnail()) {
       </div>
 
       <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.270191354748!2d130.39963687616256!3d33.598293341563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419137ab6d2361%3A0x6aa83d7b838f52f1!2z44K544K244Kt44Op44Oc77yI5bCx5Yq05pSv5o-0QuWei-S6i-alreaJgO-8iQ!5e0!3m2!1sja!2sjp!4v1767854627726!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.270191354748!2d130.39963687616256!3d33.598293341563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419137ab6d2361%3A0x6aa83d7b838f52f1!2z44K544K244Kt44Op44Oc77yI5bCx5Yq05pSv5o-0QuWei-S6i-alreaJgO-8iQ!5e0!3m2!1sja!2sjp!4v1767854627726!5m2!1sja!2sjp"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
 
 
-<!-- お問い合わせ -->
-<div class="inquire">
-  <div class="background03"></div>
-  <div class="inquire-contents">
-    <h3>まずはお気軽にご相談を</h3>
-    <div class="inquire-text">
-      <p>障害を持つ方の就労に際して重要なのは、その人の特性に合わせた提案を行うことです。<br>まずはお気軽にお問い合わせください。</p>
-    </div>
-    <a href="/suzaki/wp/contact">
-    <div class="inquire-button">
-      <p>まずは問いあわせてみる</p>
-    </div>
-    </a>
-    <div class="inquire-tel">
-      <p>お電話でのお問い合わせ<br>092-402-1650<br>(平日10:00～17:00)</p>
+  <!-- お問い合わせ -->
+  <div class="inquire">
+    <div class="background03"></div>
+    <div class="inquire-contents">
+      <h3>まずはお気軽にご相談を</h3>
+      <div class="inquire-text">
+        <p>障害を持つ方の就労に際して重要なのは、その人の特性に合わせた提案を行うことです。<br>まずはお気軽にお問い合わせください。</p>
+      </div>
+      <a href="/suzaki/wp/contact">
+        <div class="inquire-button">
+          <p>まずは問い合わせてみる</p>
+        </div>
+      </a>
+      <div class="inquire-tel">
+        <p>お電話でのお問い合わせ<br>092-402-1650<br>(平日10:00～17:00)</p>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 

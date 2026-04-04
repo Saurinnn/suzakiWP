@@ -2,6 +2,12 @@
 
 /*セクション8 --- レスポンシブ ---*/
 @media screen and (max-width: 900px) {
+
+  /*ヘッダー*/
+  .header-in {
+    display: none;
+  }
+
   .top-video {
     background-size: cover;
     height: 100vh;
@@ -16,19 +22,29 @@
     top: 15%;
     left: 10%;
   }
-  
+
+  .my-cover-text01 h2 {
+    font-size: 36px !important;
+    top: -3px;
+  }
+
   .text01-back {
     width: 70%;
+  }
+
+  .my-cover-text02 h2 {
+    font-size: 28px !important;
+    top: 5px;
   }
 
   .text02-back {
     width: 90%;
   }
-  
+
   .my-cover-text03 {
     width: 90%;
   }
-  
+
   .announce-area {
     width: 90%;
     height: auto;
@@ -44,10 +60,18 @@
   }
 
   /*About us*/
+  .my-title-about {
+    font-size: 60px !important;
+  }
+
+  .title-text-about {
+    top: 55px;
+  }
+
   .about-box {
     width: 100%;
   }
-  
+
   .about-article {
     text-align: center;
   }
@@ -57,19 +81,15 @@
   }
 
   .about-image-right {
-    margin-left: 0;
-  }
-  
-  .about-image-right img {
     margin: 0 auto;
+    width: 60%;
+    height: auto;
   }
-  
+
   .about-image-left {
-    margin-right: 0;
-  }
-  
-  .about-image-left img {
     margin: 0 auto;
+    width: 60%;
+    height: auto;
   }
 
   .about01 {
@@ -90,6 +110,14 @@
   }
 
   /*スザキコンテンツ*/
+  .my-title-contents {
+    font-size: 60px !important;
+  }
+
+  .title-text-contents {
+    top: 55px;
+  }
+
   .suzaki-textbox {
     width: 90%;
   }
@@ -97,26 +125,61 @@
   .text-article {
     width: 50%;
   }
-    
+
+  .slide-left-text {
+    padding-right: 20px;
+  }
+
+  .slide-right-text {
+    padding-left: 20px;
+  }
+
   .suzaki-character {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
   }
-    
+
   .suzaki-character img {
-    width: 143px;
-    height: 151px;
+    width: 115px;
+    height: auto;
   }
 
   /*オフィス*/
+  .my-title-text-office {
+    top: 55px;
+  }
+
+  .my-title-office {
+    font-size: 60px !important;
+  }
+
   .office-image {
     width: 90%;
   }
 
   .office-info {
     width: 90%;
+  }
+
+  .suzaki-info h3 {
+    width: 112px;
+    height: 60px;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 40px;
+  }
+
+  .suzaki-info p {
+    width: 60%;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .improve h4 {
+    font-size: 20px;
+    padding: 10px 0;
   }
 
   .map iframe {
@@ -131,14 +194,14 @@
 
   .inquire-text {
     width: 90%;
-    padding: 30px 0;
+    padding: 30px 20px;
   }
 
   /*FAQページ*/
   .qa-title {
     width: 70%;
   }
-  
+
   .typeB-content {
     width: 90%;
   }
