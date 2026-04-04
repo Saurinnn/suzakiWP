@@ -16,7 +16,7 @@
       <div class="my-cover-text03">
         <p>就労継続支援B型スザキラボはエンターテイメント系の就労支援事業所です。現役ゲームクリエイターが直接ていねいにサポートいたします。あなたも、制作側でお仕事してみませんか？</p>
       </div>
-      <a href="/suzaki/wp/contact">
+      <a href="<?php echo home_url('/contact'); ?>">
         <div class="my-cover-info">
           <h3>お問い合わせはこちら</h3>
           <div class="cover-info-detail">
@@ -371,7 +371,7 @@
       <div class="inquire-text">
         <p>障害を持つ方の就労に際して重要なのは、その人の特性に合わせた提案を行うことです。<br>まずはお気軽にお問い合わせください。</p>
       </div>
-      <a href="/suzaki/wp/contact">
+      <a href="<?php echo home_url('/contact'); ?>">
         <div class="inquire-button">
           <p>まずは問い合わせてみる</p>
         </div>

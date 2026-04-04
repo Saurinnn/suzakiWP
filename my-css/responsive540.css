@@ -128,6 +128,18 @@
   }
 
   /*about*/
+  .my-title-about {
+    font-size: 40px !important;
+  }
+
+  .title-text-about {
+    top: -10px;
+  }
+
+  .about-title-text {
+    top: 15px;
+  }
+
   .about-container {
     padding: 50px 0;
   }
@@ -161,6 +173,14 @@
   }
 
   /*スザキコンテンツ*/
+  .my-title-contents {
+    font-size: 40px !important;
+  }
+
+  .title-text-contents {
+    top: -10px;
+  }
+
   .suzaki-contents {
     text-align: center;
     padding: 50px 0;
@@ -171,6 +191,14 @@
     height: auto;
     color: #fff;
     margin: 0 auto;
+  }
+
+  .slide-left-text {
+    padding-right: 0;
+  }
+
+  .slide-right-text {
+    padding-left: 0;
   }
 
   .suzaki-flex-L {
@@ -196,6 +224,14 @@
   }
 
   /*office*/
+  .my-title-text-office {
+    top: -10px;
+  }
+
+  .my-title-office {
+    font-size: 40px !important;
+  }
+
   .office-contents {
     width: 100%;
     padding: 50px 0;
@@ -239,6 +275,11 @@
   }
 
   /*お問い合わせ*/
+  .inquire-contents h3 {
+    padding-top: 40px;
+    font-size: 28px;
+  }
+
   .inquire-text {
     width: 90%;
     margin: 0 auto;
