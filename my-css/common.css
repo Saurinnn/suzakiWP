@@ -15,3 +15,16 @@ textarea {
 .inquire {
   padding: 0 0 !important;
 }
+
+/*お問い合わせフォーム*/
+.page-id-130 .sns-buttons,
+.page-id-130 .sns-share-message,
+.page-id-130 .sns-follow-message,
+.page-id-130 .author-info,
+.page-id-130 #sidebar {
+  display: none;
+}
+
+.page-id-130 .content-in {
+  justify-content: center;
+}
