@@ -115,7 +115,7 @@
           <?php
         endif; ?>
       </ul>
-      <a href="/suzaki/wp/blog"><button>VIEW MORE>>></button></a>
+      <a href="<?php echo home_url('/blog'); ?>"><button>VIEW MORE>>></button></a>
     </div>
   </div>
 
