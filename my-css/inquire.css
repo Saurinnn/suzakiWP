@@ -12,8 +12,8 @@
   background-image: url('../images/pc01.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
-  position: absolute; 
+  background-attachment: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,6 +32,7 @@
   font-size: 48px;
   color: #fff;
   margin-bottom: 30px;
+  padding-top: 150px;
 }
 
 .inquire-text {
@@ -74,7 +75,7 @@
 .inquire-tel {
   opacity: 0;
   transform: translateY(80px);
-  transition: opacity 2s ease, transform 2s ease; 
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 .inquire-contents.fade-in,
